@@ -1,30 +1,27 @@
+package application.models;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Id;
 
 
 @Entity
-@Table(name = "autores")
+@Table(name = "generos")
 
-public class Autor{
-
+public class Genero{
     private int id;
     private String nome;
 
-public void setNome(String nome){
-    this.nome = nome;
-}
-
-public String getNome(){
-    return nome;
-}
-
-public void serId(int id){
-    this.id = id;
-}
-
+    public void setId(int id){
+        this.id = id;
+    }
 public int getId(){
     return id;
 }
-
+public void setNome(String nome){
+    this.nome = nome;
+}
+public getNome(){
+    return nome;
+}
 }
